@@ -1,0 +1,57 @@
+---------------------------------------------------------------------------
+
+AUTHOR
+
+Chao Zhu
+
+---------------------------------------------------------------------------
+
+CONTACT
+
+email : chao.zhu@ec-lyon.fr
+
+---------------------------------------------------------------------------
+
+LICENCE
+
+Source code is available under the GNU General Public License. In short, if
+you distribute a software that uses OC-LBP, you have to distribute it under
+GPL with the source code.
+
+For a copy of the GPL: http://www.gnu.org/copyleft/gpl.html
+
+---------------------------------------------------------------------------
+
+REFERENCE
+
+If you use the code of OC-LBP in your research, please give a reference to:
+
+C. Zhu, C.-E. Bichot and L. Chen, Image region description using orthogonal
+combination of local binary patterns enhanced with color information,
+Pattern Recognition (2013), http://dx.doi.org/10.1016/j.patcog.2013.01.003
+
+---------------------------------------------------------------------------
+
+USAGE
+
+1. Compile the mex_computeLBPonKeypoints.cpp file if necessary (the pre-
+   compiled versions for 64-bit Linux and 32/64-bit Windows are provided,
+   and usually they will work):
+   
+   >> mex mex_computeLBPonKeypoints.cpp
+
+
+2. Run extract_OCLBP_descriptor.m to compute gray/color OC-LBP descriptor
+   (see the M-file for more detailed instruction of each input arguments):
+   
+   >> load 000019_kps.mat
+   >> descs = extract_OCLBP_descriptor('000019.jpg',kps,8,1,'gray')
+
+---------------------------------------------------------------------------
+
+ACKNOWLEDGMENT
+
+Great thanks to Machine Vision Group, University of Oulu for sharing their
+code of LBP, which is used in the OC-LBP function.
+
+---------------------------------------------------------------------------
